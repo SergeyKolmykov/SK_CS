@@ -12,3 +12,4 @@ D:\TV\ТВиМы\RevitC#\CS_VSC_Git\SK_CS\Revit-SK\obj\Debug\net10.0\refint\Revi
 D:\TV\ТВиМы\RevitC#\CS_VSC_Git\SK_CS\Revit-SK\obj\Debug\net10.0\Revit-SK.pdb
 D:\TV\ТВиМы\RevitC#\CS_VSC_Git\SK_CS\Revit-SK\obj\Debug\net10.0\Revit-SK.genruntimeconfig.cache
 D:\TV\ТВиМы\RevitC#\CS_VSC_Git\SK_CS\Revit-SK\obj\Debug\net10.0\ref\Revit-SK.dll
+D:\TV\ТВиМы\RevitC#\CS_VSC_Git\SK_CS\Revit-SK\obj\Debug\net10.0\Revit-SK.sourcelink.json
