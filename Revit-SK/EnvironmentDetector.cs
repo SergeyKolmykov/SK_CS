@@ -25,36 +25,20 @@ public static class EnvironmentDetector
             //Console.WriteLine("Visual Studio ENV");
             return DevelopmentEnvironment.VisualStudio;
         }
-        
-        if (string.IsNullOrEmpty(Environment.GetEnvironmentVariable("TERM_PROGRAM")) )
-        {
-            Console.WriteLine("Переменной НЕТ");
-            //Console.WriteLine(string.IsNullOrEmpty(Environment.GetEnvironmentVariable("TERM_PROGRAM")));
-        } else
-        {
-            Console.WriteLine("Переменная существует 1");
+                // 2. Проверка VS Code
 
-            string? TextParametr = Environment.GetEnvironmentVariable("TERM_PROGRAM");
-            if ( TextParametr != null)
+         string? textParametr = Environment.GetEnvironmentVariable("TERM_PROGRAM");
+        if ( textParametr != null)
+        {
+                if (!string.IsNullOrEmpty(Environment.GetEnvironmentVariable("VSCODE_PID")) ||
+                (!string.IsNullOrEmpty(textParametr)) &&
+                textParametr.Contains("vscode", StringComparison.OrdinalIgnoreCase))
             {
-                TextParametr.Contains("vscode", StringComparison.OrdinalIgnoreCase);
+                //Console.WriteLine("VS Code ENV");
+                return DevelopmentEnvironment.VSCode;
             }
-            //Environment.GetEnvironmentVariable("TERM_PROGRAM");
-            
-            
-            Console.WriteLine("Переменная существует 2");
-            Console.WriteLine(!string.IsNullOrEmpty(Environment.GetEnvironmentVariable("TERM_PROGRAM")));
-            Console.WriteLine("Переменная существует 3");
-        }
-
-        // 2. Проверка VS Code
-        if (!string.IsNullOrEmpty(Environment.GetEnvironmentVariable("VSCODE_PID")) ||
-            (!string.IsNullOrEmpty(Environment.GetEnvironmentVariable("TERM_PROGRAM")) &&
-             Environment.GetEnvironmentVariable("TERM_PROGRAM").Contains("vscode", StringComparison.OrdinalIgnoreCase)))
-        {
-            //Console.WriteLine("VS Code ENV");
-            return DevelopmentEnvironment.VSCode;
-        }
+        }        
+        
         
         // 3. Проверка Windows Terminal
         if (!string.IsNullOrEmpty(Environment.GetEnvironmentVariable("WT_SESSION")) ||
@@ -83,9 +67,9 @@ public static class EnvironmentDetector
         }
         
         // 7. Определение типа оболочки
-        string term = Environment.GetEnvironmentVariable("TERM");
-        string shell = Environment.GetEnvironmentVariable("SHELL");
-        string comSpec = Environment.GetEnvironmentVariable("ComSpec");
+        string? term = Environment.GetEnvironmentVariable("TERM");
+        string? shell = Environment.GetEnvironmentVariable("SHELL");
+        string? comSpec = Environment.GetEnvironmentVariable("ComSpec");
         
         if (!string.IsNullOrEmpty(term) && term.Contains("powershell", StringComparison.OrdinalIgnoreCase))
         {
