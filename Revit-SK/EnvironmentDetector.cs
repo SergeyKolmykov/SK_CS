@@ -26,6 +26,25 @@ public static class EnvironmentDetector
             return DevelopmentEnvironment.VisualStudio;
         }
         
+        if (string.IsNullOrEmpty(Environment.GetEnvironmentVariable("TERM_PROGRAM")) )
+        {
+            Console.WriteLine("Переменной НЕТ");
+            //Console.WriteLine(string.IsNullOrEmpty(Environment.GetEnvironmentVariable("TERM_PROGRAM")));
+        } else
+        {
+            Console.WriteLine("Переменная существует 1");
+            if ( Environment.GetEnvironmentVariable("TERM_PROGRAM") != null)
+            {
+                Environment.GetEnvironmentVariable("TERM_PROGRAM").Contains("vscode", StringComparison.OrdinalIgnoreCase);
+            }
+            //Environment.GetEnvironmentVariable("TERM_PROGRAM");
+            
+            
+            Console.WriteLine("Переменная существует 2");
+            Console.WriteLine(!string.IsNullOrEmpty(Environment.GetEnvironmentVariable("TERM_PROGRAM")));
+            Console.WriteLine("Переменная существует 3");
+        }
+
         // 2. Проверка VS Code
         if (!string.IsNullOrEmpty(Environment.GetEnvironmentVariable("VSCODE_PID")) ||
             (!string.IsNullOrEmpty(Environment.GetEnvironmentVariable("TERM_PROGRAM")) &&
