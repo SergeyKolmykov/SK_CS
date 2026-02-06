@@ -33,9 +33,11 @@ public static class EnvironmentDetector
         } else
         {
             Console.WriteLine("Переменная существует 1");
-            if ( Environment.GetEnvironmentVariable("TERM_PROGRAM") != null)
+
+            string? TextParametr = Environment.GetEnvironmentVariable("TERM_PROGRAM");
+            if ( TextParametr != null)
             {
-                Environment.GetEnvironmentVariable("TERM_PROGRAM").Contains("vscode", StringComparison.OrdinalIgnoreCase);
+                TextParametr.Contains("vscode", StringComparison.OrdinalIgnoreCase);
             }
             //Environment.GetEnvironmentVariable("TERM_PROGRAM");
             
