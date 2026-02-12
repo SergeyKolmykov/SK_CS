@@ -24,6 +24,8 @@ public static class EnvironmentDetector
         {
             //Console.WriteLine("Visual Studio ENV");
             return DevelopmentEnvironment.VisualStudio;
+            
+            
         }
                 // 2. Проверка VS Code
 
@@ -35,7 +37,8 @@ public static class EnvironmentDetector
                 textParametr.Contains("vscode", StringComparison.OrdinalIgnoreCase))
             {
                 //Console.WriteLine("VS Code ENV");
-                return DevelopmentEnvironment.VSCode;
+                
+                return  DevelopmentEnvironment.VSCode;
             }
         }        
         
