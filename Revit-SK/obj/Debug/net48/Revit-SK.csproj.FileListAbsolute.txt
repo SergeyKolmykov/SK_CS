@@ -1,0 +1,6 @@
+D:\TV\ТВиМы\RevitC#\CS_VSC_Git\SK_CS\Revit-SK\obj\Debug\net48\Revit-SK.csproj.AssemblyReference.cache
+D:\TV\ТВиМы\RevitC#\CS_VSC_Git\SK_CS\Revit-SK\obj\Debug\net48\Revit-SK.GeneratedMSBuildEditorConfig.editorconfig
+D:\TV\ТВиМы\RevitC#\CS_VSC_Git\SK_CS\Revit-SK\obj\Debug\net48\Revit-SK.AssemblyInfoInputs.cache
+D:\TV\ТВиМы\RevitC#\CS_VSC_Git\SK_CS\Revit-SK\obj\Debug\net48\Revit-SK.AssemblyInfo.cs
+D:\TV\ТВиМы\RevitC#\CS_VSC_Git\SK_CS\Revit-SK\obj\Debug\net48\Revit-SK.csproj.CoreCompileInputs.cache
+D:\TV\ТВиМы\RevitC#\CS_VSC_Git\SK_CS\Revit-SK\obj\Debug\net48\Revit-SK.sourcelink.json

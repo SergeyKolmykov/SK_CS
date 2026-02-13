@@ -1,0 +1,15 @@
+D:\TV\ТВиМы\RevitC#\CS_VSC_Git\SK_CS\Revit-SK\bin\Debug\net8.0\Revit-SK.exe
+D:\TV\ТВиМы\RevitC#\CS_VSC_Git\SK_CS\Revit-SK\bin\Debug\net8.0\Revit-SK.deps.json
+D:\TV\ТВиМы\RevitC#\CS_VSC_Git\SK_CS\Revit-SK\bin\Debug\net8.0\Revit-SK.runtimeconfig.json
+D:\TV\ТВиМы\RevitC#\CS_VSC_Git\SK_CS\Revit-SK\bin\Debug\net8.0\Revit-SK.dll
+D:\TV\ТВиМы\RevitC#\CS_VSC_Git\SK_CS\Revit-SK\bin\Debug\net8.0\Revit-SK.pdb
+D:\TV\ТВиМы\RevitC#\CS_VSC_Git\SK_CS\Revit-SK\obj\Debug\net8.0\Revit-SK.GeneratedMSBuildEditorConfig.editorconfig
+D:\TV\ТВиМы\RevitC#\CS_VSC_Git\SK_CS\Revit-SK\obj\Debug\net8.0\Revit-SK.AssemblyInfoInputs.cache
+D:\TV\ТВиМы\RevitC#\CS_VSC_Git\SK_CS\Revit-SK\obj\Debug\net8.0\Revit-SK.AssemblyInfo.cs
+D:\TV\ТВиМы\RevitC#\CS_VSC_Git\SK_CS\Revit-SK\obj\Debug\net8.0\Revit-SK.csproj.CoreCompileInputs.cache
+D:\TV\ТВиМы\RevitC#\CS_VSC_Git\SK_CS\Revit-SK\obj\Debug\net8.0\Revit-SK.sourcelink.json
+D:\TV\ТВиМы\RevitC#\CS_VSC_Git\SK_CS\Revit-SK\obj\Debug\net8.0\Revit-SK.dll
+D:\TV\ТВиМы\RevitC#\CS_VSC_Git\SK_CS\Revit-SK\obj\Debug\net8.0\refint\Revit-SK.dll
+D:\TV\ТВиМы\RevitC#\CS_VSC_Git\SK_CS\Revit-SK\obj\Debug\net8.0\Revit-SK.pdb
+D:\TV\ТВиМы\RevitC#\CS_VSC_Git\SK_CS\Revit-SK\obj\Debug\net8.0\Revit-SK.genruntimeconfig.cache
+D:\TV\ТВиМы\RevitC#\CS_VSC_Git\SK_CS\Revit-SK\obj\Debug\net8.0\ref\Revit-SK.dll

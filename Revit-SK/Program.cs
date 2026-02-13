@@ -1,6 +1,25 @@
 ﻿using System;
 using System.Runtime.InteropServices;
 
+//-------------------------------------------------------------------------------------------------------------------------------------------
+//  Распознование речи
+
+//  Настройка цувствительности микрофона в windows "WIN+R" + "mmsys.cpl"
+//  Настройуа РУССОГО ЯЗЫКА в консоле VISIO STUDIO                              https://habr.com/ru/articles/545330/?ysclid=mkwni9and5154745634
+//  Голосовое Управление. Создаем голосовую программу                           https://rutube.ru/video/4915f403f60207ddfc8025f87be9cfd2
+
+
+//using Microsoft.Speech.Recognition;
+using System.Collections.Generic;
+using System.Globalization;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+//  Распознование речи
+//-------------------------------------------------------------------------------------------------------------------------------------------
+
+
 class Program
     {   
         // Пока каким-то необъяснимым способом получилось убрать предупреждения в VScode "The local function 'GetConsoleCP' is declared but never use" 
@@ -10,7 +29,7 @@ class Program
         // 1. Флаг VSCODE_ENV декларировался в json-запросе "c_cpp_properties.json". Запрос должен был выполняться перед командой "dotnet run" в VScode
         // и не выполнятся при запуске в Visual Studio. То есть при запуске в VScode флаг VSCODE_ENV объвлялся, а при запуске в Visual Studio его бы не было.
         // 2. Дальше все понятно по коду "#if !VSCODE_ENV" - значит, что если флаг VSCODE_ENV не заявлен, то выполняй компиляцию от флага до #endif
-        // В основном информация получена из запросов в Deep Seek
+        // В основном информация получена из запросов в Deep Seek    
 
         #if !VSCODE_ENV
 
@@ -81,8 +100,9 @@ class Program
 
         static void ENV_VScode()
         {
-            Console.WriteLine("Приложение запущено в VS Code");
-        }
+            Console.WriteLine("Приложение запущено в VScode");
+            Console.WriteLine($"Версия среды: {Environment.Version}");
+    }
         static void ENV_VS()
         {
             #if !VSCODE_ENV
@@ -93,5 +113,6 @@ class Program
             //RusKodirovkaForVS.RusTest();
 
             Console.WriteLine("Приложение запущено в VS");
+            Console.WriteLine($"Версия среды: {Environment.Version}");
     }
     }
