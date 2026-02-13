@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Revit-SK")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8891561e186116e360e87de85e9b207b2a26501e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e8a9e2c4aceb60318f250d5564b43d80e47ff22c")]
 [assembly: System.Reflection.AssemblyProductAttribute("Revit-SK")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Revit-SK")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
